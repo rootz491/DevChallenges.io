@@ -1,6 +1,8 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/895dc34a-fcb0-4a41-8568-0eb35332e44c/deploy-status)](https://app.netlify.com/sites/team-page-devchellenge-io/deploys)
+
+<h1 align="center">{team page}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,7 +14,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://team-page-devchellenge-io.netlify.app/">
       Solution
     </a>
     <span> | </span>
