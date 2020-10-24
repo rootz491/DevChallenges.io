@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+.me > h1 {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: .5em;
+    padding-right: 2em;
+}
+
+header {
+    padding: 3em;
+}
+
+header a {
+    font-size: 1.5em;
+    color: grey;
+}
+
+main {
+    padding: 3em 0;
+    margin: 0 20%;
+    min-height: 50vh;
+}
+
+blockquote {
+    padding: 0 3em;
+    margin: 3em 0;
+    font-size: 1.6em;   
+    border-left: 3px solid yellow;
+}
+
+blockquote::before, blockquote::after {
+    content: "\"";
+}
+
+.author {
+    padding: 2em 3em;
+    font-size: 1.2em;
+    color: #333333;
+    margin: 0 3em;
+    border-radius: 10px;
+    transition: all .25s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    cursor: pointer;
+}
+
+.author:hover {
+    color: whitesmoke;
+    background-color: #333333;
+}
+
+.hidden {
+    display: none;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+[data-arrow] {
+    width: 20px;
+    height: 2px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+[data-arrow]::before, [data-arrow]::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    right: 0.5px;
+    background-color: whitesmoke;
+}
+
+
+[data-arrow]::before {
+    top: -5px;
+    transform: rotate(45deg);
+}
+
+[data-arrow]::after {
+    top: 5px;
+    transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 850px) {
+    main {
+        padding: 3em 0;
+        margin: 0 5%;
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 1em;
+        margin-top: 2em;
+    }
+    
+    .me > h1 {
+        padding: 1em;
+        text-align: center;
+    }
+
+    blockquote {
+        padding: 0 1.5em;
+        padding-right: 0;
+        margin: 3em 0;
+        font-size: 1.2em;   
+        border-left: 3px solid yellow;
+    }
+    
+    [data-arrow] {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .author {
+        margin: 0;
+        padding: .8em 1.5em;
+    }
+}
